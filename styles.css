@@ -148,7 +148,7 @@ form .fa-location-dot {
 	align-items: center;
 	margin-top: 25px;
 }
-label {
+.filters h5 {
 	margin-right: 0px;
 	font-weight: bold;
 	font-size: 15px;
@@ -276,6 +276,8 @@ main {
 	object-fit: cover;
 	object-position: 25% 50%;
 	border-radius: 10px 10px 0 0;
+
+	/* Talk about how the object fit, position and aspect ratio all tied into creating the image layout and styling*/
 }
 
 .card-info {
@@ -596,7 +598,7 @@ footer {
 		display: none;
 	}
 
-	label {
+	.filters h5 {
 		margin-bottom: 10px;
 	}
 
@@ -798,5 +800,34 @@ footer {
 
 	.links ul li a {
 		font-size: 15px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+	.accommodations {
+		width: 92%;
+	}
+
+	.cards {
+		width: 100%;
+		gap: 25px;
+	}
+
+	.show-more {
+		margin-left: 20px;
+	}
+	.popular,
+	.popular-cards {
+		flex-direction: row;
+	}
+	.popular {
+		width: 93%;
+	}
+
+	.popular-cards {
+		gap: 25px;
+		justify-content: center;
 	}
 }
